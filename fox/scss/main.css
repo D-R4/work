@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.bg-DarkGrey {
+  background-color: #393939;
+  border-bottom: 2px solid #fff;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+nav .nav__logo {
+  width: 90px;
+  height: auto;
+}
+nav ul {
+  display: flex;
+  margin-right: 400px;
+}
+nav ul li {
+  margin-right: 45px;
+}
+nav ul li a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #ffffff;
+}
+nav ul li a:hover {
+  color: gray;
+}
+
+main {
+  position: relative;
+}
+main .main__img_car {
+  position: absolute;
+  bottom: -37px;
+  right: 265px;
+  width: 479px;
+  height: 268px;
+}
+main .main__block {
+  width: 750px;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+}
+main .main__block .main__img {
+  width: 162px;
+  height: auto;
+}
+main .main__block .main__text-block {
+  width: 460px;
+}
+main .main__block .main__text-block h1 {
+  width: 216px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+}
+main .main__block .main__text-block h1 span {
+  color: #F87C34;
+}
+main .main__block .main__text-block h1 .white {
+  color: #fff;
+}
+main .main__block .main__text-block .main__text-block-inner h2 {
+  border-top: 5px solid #F87C34;
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 47px;
+  color: #FFFFFF;
+}
+main .main__block .main__text-block .main__text-block-inner .main__phone {
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #F87C34;
+}
+main .main__block .main__text-block .main__text-block-inner .main__phone img {
+  width: 22px;
+  height: auto;
+}
+
+.main__block2 {
+  width: 700px;
+  margin-left: 200px;
+}
+.main__block2-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 100px;
+}
+.main__block2-inner p {
+  color: black;
+  padding: 10px 40px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: white;
+  width: 230px;
+  height: 46px;
+  text-align: center;
+  font-family: "Urbanist", sans-serif;
+  margin-top: 25px;
+}/*# sourceMappingURL=main.css.map */

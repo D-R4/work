@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+
+.bg-DarkGrey{
+        background-color: 
+        #393939;
+        border-bottom: 2px solid #fff;
+    }
+
+
+$bgDG:#393939;
+
+.container{
+    width: 1200px;
+    margin: auto;
+    
+}
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 0;
+    
+    .nav__logo{
+        width: 90px;
+        height: auto;
+
+    }
+    ul{
+        display: flex;
+        margin-right: 400px;
+        
+        li{
+            margin-right: 45px;
+            
+            a{
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 150%;
+                color: #ffffff;
+                &:hover{
+                    color: gray;
+                }
+            }
+        }
+    }
+}
+
+main{
+    position: relative;
+    .main__img_car{
+        position: absolute;
+        bottom: -37px;
+        right: 265px;
+        width: 479px;
+        height: 268px;
+    }
+    .main__block{
+        width: 750px;
+        height: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 100px;
+        
+
+        .main__img{
+            width: 162px;
+            height: auto;
+
+        }
+        .main__text-block{
+            width: 460px;
+            h1{
+                width: 216px;
+                font-weight: 700;
+                font-size: 60px;
+                line-height: 90px;
+                color: #FFFFFF;
+                font-family: 'Poppins', sans-serif;
+                padding: 10px;
+                
+                span{
+                    color: 
+                    #F87C34;
+                }
+                .white{
+                    color: #fff;
+                }
+            }
+            .main__text-block-inner{
+                h2{
+                    border-top: 5px solid  #F87C34;
+                    padding: 10px 0;
+                    font-weight: 600;
+                    font-size: 40px;
+                    line-height: 47px;
+
+                    color: #FFFFFF;
+                }
+                .main__phone{
+                    display: flex;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 24px;
+                    text-align: center;
+
+                    color: #F87C34;
+                    img{
+                        width: 22px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin mainP($c,$p,$brTL,$brTR,$fz,$fw,$bg) {
+    color:$c ;
+    padding: $p;
+    border-top-left-radius:$brTL ;
+    border-top-right-radius:$brTR ;
+    font-size: $fz;
+    font-weight: $fw;
+    background-color: $bg;
+    
+}
+.main__block2{
+    width: 700px;
+    margin-left:200px;
+    &-inner{
+    
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 100px;
+    p{
+        @include mainP(black,10px 40px ,35px ,35px ,25px ,600,white );
+        width: 230px;
+        height: 46px;
+        text-align: center;
+        font-family: 'Urbanist', sans-serif;
+        margin-top: 25px;
+        
+    }
+    }
+    
+}
